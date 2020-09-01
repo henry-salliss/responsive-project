@@ -96,6 +96,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
 
 ul,
@@ -112,18 +113,21 @@ a{
 
 h2{
 font-family: 'Poppins', sans-serif;
-font-size: 1.875em
+font-size: 1.875em;
+font-weight: 500;
 }
 
 h3,
 h4{
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  margin: 20px 0;
+  font-weight: 500;
 }
 
 p{
   line-height: 1.285;
-
+font-size: 0.875em;
 }
 
 img{
@@ -150,6 +154,7 @@ address{
 
 
 
+
 /*=======================Header and footer base styles ================================*/
 
 header,
@@ -158,6 +163,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #202322;
 }
 
 /*=======================Header base styles ================================*/
@@ -165,7 +171,7 @@ header{
   padding: 15px 0;
 }
 
-.content-wrapper{
+header .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,6 +183,7 @@ header{
   width: 100%;
   margin: 10px 0 20px 0;
   height: 1px;
+  background: #3a3a3a;
 }
 
 header nav{
@@ -185,6 +192,8 @@ header nav{
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
 }
 
 header nav ul{
@@ -193,15 +202,23 @@ header nav ul{
     width: 100%;
 }
 
+header nav ul li{
+  font-size: 1.125em;
+}
+
 
 /*======================= footer base styles ================================*/
 
 footer{
 flex-direction: column;
+text-align: center;
 }
 
+footer p{
+  margin: 0;
+}
 
-.footer.content{
+footer .content-wrapper{
   width: 55%;
   margin: 50px 0;
 }
@@ -245,21 +262,52 @@ flex-direction: column;
 .hero-area{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
+.hero-area h1{
+  font-size: 2.25em;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+} 
 
 aside{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 .features{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -283,15 +331,11 @@ aside{
   margin: 0;
 }
 
-.item-description{
-
-
-}
 
 .reviews{
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -316,10 +360,6 @@ aside{
   flex-flow: row wrap;
 }
 
-.mission-content{
-
-
-}
 
 .contact-section{
   display: flex;
@@ -328,8 +368,8 @@ aside{
     flex-flow: row wrap;
 }
 
-.contact-content{
-
+.contact-content p{
+margin: 0;
 
 }
 
@@ -343,17 +383,26 @@ aside{
   flex-flow: row wrap;
 }
 
-.question-section{
-
-
+.faq .content-wrapper{
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-.question{
-
-
+.faq h2{
+  margin-bottom: 40px;
+  line-height: 1;
 }
 
+.faq-content{
+  margin-bottom: 50px;
+}
 
+.faq-content h4{
+  line-height: 1.333;
+}
 
 
 
@@ -573,6 +622,10 @@ footer .copyright{
   /*MEDIA QUERIES FOR DESKTOP DEVICES */
 .content-wrapper{
   max-width: 960px;
+}
+
+nav ul li{
+  padding-left: 30px;
 }
 
 .hero-area h1{
