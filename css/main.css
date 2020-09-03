@@ -285,9 +285,7 @@ footer .contact{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url(/img/bg2.jpg);
-  background-position: center;
-  background-size: cover;
+  background: url(../img/unplugged-retreat.jpg) center center / cover;
   min-height: 500px;
 }
 .hero-area h1{
