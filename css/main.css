@@ -240,7 +240,7 @@ footer .content-wrapper{
   margin: 50px 0;
 }
 
-.contact{
+footer .contact{
   margin-bottom: 50px;
 
 }
@@ -256,9 +256,14 @@ footer .content-wrapper{
   display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-left: 10%;
 }
 
 .social-icons p{
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
