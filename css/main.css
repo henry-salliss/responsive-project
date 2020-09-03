@@ -185,6 +185,7 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  
 }
 
 .header-divider{
@@ -279,6 +280,10 @@ footer .content-wrapper{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(/img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
 }
 .hero-area h1{
   font-size: 2.25em;
@@ -293,6 +298,7 @@ aside{
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+  
 }
 aside .form {
   margin-top: 30px;
@@ -579,6 +585,10 @@ header nav ul{
   justify-content: center;
 }
 
+.hero-area{
+  min-height: 600px;
+}
+
 .features article{
   display: flex;
   justify-content: center;
@@ -650,6 +660,21 @@ footer .copyright{
 .faq h2{
   width: 100%;
 }
+}
+.map figure{
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
